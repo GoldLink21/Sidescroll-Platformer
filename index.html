@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href="main.css">
+    <title>Platformer</title>
+</head>
+<body>
+    <canvas width="500" height="500"></canvas>
+    <script src='main.js'></script>
+    <script>
+        function test1(functionOne,functionTwo){
+            var iterations = 100000;
+            console.time('Test #1');
+            for(var i = 0; i < iterations; i++ ){
+                functionOne();
+            };
+            console.timeEnd('Test #1');
+
+            console.time('Test #2');
+            for(var i = 0; i < iterations; i++ ){
+                functionTwo();
+            };
+            console.timeEnd('Test #2')
+        }
+    </script>
+</body>
+</html>
